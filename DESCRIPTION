@@ -21,7 +21,9 @@ Imports:
     rlang,
     tidyr,
     tidyselect,
-    tools
+    tools,
+    waldo,
+    withr
 Suggests: 
     testthat (>= 3.0.0)
 Config/testthat/edition: 3
