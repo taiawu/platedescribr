@@ -12,7 +12,7 @@
 #'
 #' @examples
 #' # Get path to one example
-#' platedescribr_example("dose_response.csv")
+#' # platedescribr_example("dose_response.csv")
 #'
 platedescribr_example <- function(path = NULL) {
   if (is.null(path)) {
