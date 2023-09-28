@@ -1,16 +1,30 @@
 Package: platedescribr
-Title: Define, Read, and Visualize Experimental Conditions by Well for Well-Plate Assays
+Title: Define, Read, and Visualize Experimental Conditions by Well for
+    Well-Plate Assays
 Version: 0.0.0.9000
 Authors@R: 
     person("Taiasean", "Wu", , "taiawu@gmail.com", role = c("aut", "cre"),
            comment = c(ORCID = "0000-0001-6988-1414"))
-Description: An tidy approach to define the experimental conditions of each well in a well-plate assay. The user provides a plate layout file containing any number of experimental variables (e.g. "compound", "compound concentration", "protein"). The platedescribr package reads and tidies this file.
+Description: An tidy approach to define the experimental conditions of
+    each well in a well-plate assay. The user provides a plate layout file
+    containing any number of experimental variables (e.g. "compound",
+    "compound concentration", "protein"). The platedescribr package reads
+    and tidies this file.
 License: MIT + file LICENSE
-Encoding: UTF-8
-Roxygen: list(markdown = TRUE)
-RoxygenNote: 7.2.3
+URL: https://github.com/taiawu/platedescribr
+BugReports: https://github.com/taiawu/platedescribr/issues
+Imports: 
+    dplyr,
+    purrr,
+    readr,
+    readxl,
+    rlang,
+    tidyr,
+    tidyselect,
+    tools
 Suggests: 
     testthat (>= 3.0.0)
 Config/testthat/edition: 3
-URL: https://github.com/taiawu/platedescribr
-BugReports: https://github.com/taiawu/platedescribr/issues
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.2.3
