@@ -9,6 +9,9 @@ platedescribr_example(path = NULL)
 \arguments{
 \item{path}{Name of file.}
 }
+\value{
+Path to the supplied file.
+}
 \description{
 platedefinr comes with a number of sample files in its 'inst/extdata' directory. Use \code{platedescribr_example()} to retrieve the path to an available example.
 example.

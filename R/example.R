@@ -7,7 +7,7 @@
 #'
 #' @param path Name of file.
 #'
-#' @return
+#' @return Path to the supplied file.
 #' @export
 #'
 #' @examples
