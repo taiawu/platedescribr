@@ -23,17 +23,17 @@ read_layout <- function(filepath, ...) {
   ext <- file_ext(filepath)
 
   raw <- switch(ext,
-                csv = read_csv(filepath, col_names = FALSE),
-                txt = read_tsv(filepath, col_names = FALSE), # fails with UTF-16
-                xlsx = read_excel(filepath, col_names = FALSE),
-                xls = read_excel(filepath, col_names = FALSE)
+    csv = read_csv(filepath, col_names = FALSE),
+    txt = read_tsv(filepath, col_names = FALSE), # fails with UTF-16
+    xlsx = read_excel(filepath, col_names = FALSE),
+    xls = read_excel(filepath, col_names = FALSE)
   ) |> suppressMessages()
 
   # handle files with or without the "Type" header
   first_cell <- raw[1, 1][[1]] # extract value of top-left cell
   out <- switch(first_cell,
-                Type = raw[-1, ], # if it includes "Type", drop this unnecessary top row
-                raw # otherwise, proceed unchanged
+    Type = raw[-1, ], # if it includes "Type", drop this unnecessary top row
+    raw # otherwise, proceed unchanged
   )
 
   # Format as layout  --------------------------------------------------------------
