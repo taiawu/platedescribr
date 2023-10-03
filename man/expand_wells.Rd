@@ -2,7 +2,7 @@
 % Please edit documentation in R/plate_handlers.R
 \name{expand_wells}
 \alias{expand_wells}
-\title{Expand wells}
+\title{Expand wells ## DOCUMENTATION NOT FINISHED######}
 \usage{
 expand_wells(dim1, dim2, .leading_zeroes = FALSE)
 }
@@ -17,5 +17,15 @@ expand_wells(dim1, dim2, .leading_zeroes = FALSE)
 vector of well names
 }
 \description{
-Expand wells
+Expand wells ## DOCUMENTATION NOT FINISHED######
+}
+\examples{
+
+expand_wells(c("A", "B"), c(8:10))
+# [1] "A8"  "B8"  "A9"  "B9"  "A10" "B10""
+
+# leading zeroes can be added to well names
+expand_wells(c("A", "B"), c(8:10), .leading_zeroes = TRUE)
+# [1] "A08" "B08" "A09" "B09" "A10" "B10"
+
 }

@@ -1,6 +1,8 @@
-#' Wells to rows
+#' Wells to rows ## DOCUMENTATION NOT FINISHED######
 #'
 #' Given a well name (e.g. "A1"), extract the plate row ("A").
+#'
+#' @family well name handlers
 #'
 #' @param well_names A vector of well names.
 #'
@@ -16,7 +18,7 @@ wells_to_rows <- function(well_names){
 }
 
 
-#' Wells to cols
+#' Wells to cols ## DOCUMENTATION NOT FINISHED######
 #'
 #' Given a well name (e.g. "A1"), extract the plate column (1).
 #'
@@ -33,7 +35,7 @@ wells_to_cols <- function(well_names){
   as.numeric(gsub("\\D", "", well_names))
 }
 
-#' Expand wells
+#' Expand wells ## DOCUMENTATION NOT FINISHED######
 #'
 #' @param dim1 first dimension to expand
 #' @param dim2 second dimension to expand
@@ -43,6 +45,16 @@ wells_to_cols <- function(well_names){
 #'
 #' @return vector of well names
 #' @export
+#'
+#' @examples
+#'
+#' expand_wells(c("A", "B"), c(8:10))
+#' # [1] "A8"  "B8"  "A9"  "B9"  "A10" "B10""
+#'
+#' # leading zeroes can be added to well names
+#' expand_wells(c("A", "B"), c(8:10), .leading_zeroes = TRUE)
+#' # [1] "A08" "B08" "A09" "B09" "A10" "B10"
+#'
 expand_wells <- function(dim1, dim2, .leading_zeroes = FALSE) {
   expand.grid("cols" = dim1, "rows" = dim2)
   do.call(paste0, dplyr::arrange(expand.grid("cols" = dim1, "rows" = dim2), "cols"))

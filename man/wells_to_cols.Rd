@@ -2,7 +2,7 @@
 % Please edit documentation in R/plate_handlers.R
 \name{wells_to_cols}
 \alias{wells_to_cols}
-\title{Wells to cols}
+\title{Wells to cols ## DOCUMENTATION NOT FINISHED######}
 \usage{
 wells_to_cols(well_names)
 }
