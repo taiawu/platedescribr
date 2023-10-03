@@ -20,3 +20,4 @@ wells_to_rows(c("A1", "A2", "B1", "B2"))
 # [1] "A" "A" "B" "B"
 
 }
+\concept{well name handlers}

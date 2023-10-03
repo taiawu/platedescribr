@@ -2,8 +2,8 @@
 
 export(add_empty_wells)
 export(expand_wells)
-export(platedescribr_example)
 export(read_layout)
+export(tidyplate_example)
 export(well_names)
 export(wells_to_cols)
 export(wells_to_rows)

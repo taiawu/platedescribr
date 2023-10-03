@@ -1,22 +1,22 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
-# platedescribr
+# tidyplate
 
 <!-- badges: start -->
 <!-- badges: end -->
 
-The goal of platedescribr is to make it easier to analyze, plot, and
-record the results of plate-based assays.
+The goal of tidyplate is to make it easier to analyze, plot, and record
+the results of plate-based assays.
 
 ## Installation
 
-You can install the development version of platedescribr from
+You can install the development version of tidyplate from
 [GitHub](https://github.com/) with:
 
 ``` r
 # install.packages("devtools")
-devtools::install_github("taiawu/platedescribr")
+devtools::install_github("taiawu/tidyplate")
 ```
 
 ## Example
@@ -24,7 +24,7 @@ devtools::install_github("taiawu/platedescribr")
 Examples coming soon!
 
 ``` r
-library(platedescribr)
+library(tidyplate)
 ## basic example code
 ```
 
