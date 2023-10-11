@@ -18,7 +18,7 @@
 #' extract_plate_row(c("A1", "A2", "B1", "B2"))
 #' # [1] "A" "A" "B" "B"
 #'
-#' # extract the suspected plate column
+#' # extract the suspected plate co()lumn
 #' extract_plate_col(c("A1", "A2", "B1", "B2"))
 #' # [1] 1 2 1 2
 #'
